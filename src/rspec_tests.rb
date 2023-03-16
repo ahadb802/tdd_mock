@@ -13,8 +13,8 @@ RSpec.describe Solver do
 
     # We create the context to the test
     context 'when given 0' do
-      # We test the case when we give it a 0 as a parameter 
-    it 'returns 1' do
+      # We test the case when we give it a 0 as a parameter
+      it 'returns 1' do
         solver = Solver.new
         allow(solver).to receive(:factorial).and_return(1)
         expect(solver.factorial(0)).to eq(1)
